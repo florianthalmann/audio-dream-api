@@ -1,0 +1,31 @@
+{
+  "name": "audio-dream-api",
+  "version": "0.0.1",
+  "description": "node server and api that stores, analyzes, and dreams about audio",
+  "main": "lib/server.js",
+  "dependencies": {
+    "@extractors/qm": "github:LucasThompson/piper-qm-vamp-plugins",
+    "audio-decode": "^1.4.0",
+    "express": "^4.16.2",
+    "lodash": "^4.17.5",
+    "piper-js": "^0.21.2",
+    "wav": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "@types/lodash": "^4.14.104"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianthalmann/audio-dream-api.git"
+  },
+  "author": "florianthalmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florianthalmann/audio-dream-api/issues"
+  },
+  "homepage": "https://github.com/florianthalmann/audio-dream-api#readme"
+}

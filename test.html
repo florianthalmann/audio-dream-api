@@ -1,0 +1,17 @@
+<html>
+<body>
+  <input type="file" id="file-input" onchange="loadFile(this)"/>
+  <script type="text/JavaScript">
+    function loadFile(file) {
+      var reader = new FileReader();
+      reader.onload = function(event) {
+        var http = new XMLHttpRequest();
+        http.open("POST", "http://localhost:8060/audio", true);
+        var blob = new Blob([event.currentTarget.result], {type : 'audio/wav'});
+        http.send(blob);
+      };
+      reader.readAsArrayBuffer(file.files[0]);
+    }
+  </script>
+</body>
+</html>
